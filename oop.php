@@ -1,5 +1,4 @@
 <?php
-
 class Animals
 {
     public string $name;
