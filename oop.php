@@ -13,6 +13,11 @@ class Animals
         echo "Hello, I'm Initialized \n";
     }
 
+    public function intro()
+    {
+        echo "Hello, This is intro function from Class Animals";
+    }
+
     public function setAge()
     {
         $this->age = 12;
@@ -42,11 +47,19 @@ class Dog extends Animals
     {
         echo "\nHello World";
     }
+
+    // Override = menimpa function intro pada parent
+    public function intro()
+    {
+        echo "This is from Dog class";
+    }
 }
 
+$parent = new Animals();
+$parent->intro();
+
 $new = new Dog();
-$new->jump();
-$new->message();
+$new->intro();
 
 // $dog = new Animals(); // object instance
 
