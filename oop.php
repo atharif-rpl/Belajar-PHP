@@ -35,29 +35,42 @@ class Animals
     }
 }
 
-$dog = new Animals(); // object instance
+// Inheritance
+class Dog extends Animals
+{
+    public function message()
+    {
+        echo "\nHello World";
+    }
+}
 
-$dog->name = "Bulldog";
-$dog->color = "Brown";
-// $dog->age = 12; // error
-// $dog->weight = 12;
+$new = new Dog();
+$new->jump();
+$new->message();
+
+// $dog = new Animals(); // object instance
+
+// $dog->name = "Bulldog";
+// $dog->color = "Brown";
+// // $dog->age = 12; // error
+// // $dog->weight = 12;
 
 
-$cat = new Animals();
-$cat->name = "Persia";
-$cat->color = "Orange";
+// $cat = new Animals();
+// $cat->name = "Persia";
+// $cat->color = "Orange";
 
 
-// var_dump($dog);
-// $dog->jump();
-$dog->getName();
-echo "\n"; // new line
-$dog->sound("Barking");
+// // var_dump($dog);
+// // $dog->jump();
+// $dog->getName();
+// echo "\n"; // new line
+// $dog->sound("Barking");
 
-echo "\n"; // new line
+// echo "\n"; // new line
 
-// var_dump($cat);
-// $cat->jump();
-$cat->getName();
-echo "\n"; // new line
-$cat->sound("Meongg");
+// // var_dump($cat);
+// // $cat->jump();
+// $cat->getName();
+// echo "\n"; // new line
+// $cat->sound("Meongg");
